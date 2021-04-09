@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>アンケートのご協力のお願い_Ver.%</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrap">
+		<form method="post" action="">
+			<div class="header">
+				<div class="header-text">
+					<h1>アンケートのご協力のお願い</h1>
+					<p>【お分かりの範囲で構いませんのでご回答をお願いします】</p>
+				</div>
+				<div class="staff-img"><img src="images/yoroshiku_tenin.png" alt="よろしくお願いします"></div>
+				<div class="guest-img"><img src="images/computer_woman.png" alt="パソコン"><img src="images/smartphone_man_2.png" alt="スマートフォン"></div>
+			</div>
+			<table>
+				<tr class="table-hd">
+					<th colspan="6"><h2>お客様について</h2></th>
+				</tr>
+				<tr>
+					<th><h3>性別<span class="mast">必須</span></h3></th>
+					<td colspan="5">
+						<label><input type="radio" name="gender" value="man" required> 男</label>
+						<label><input type="radio" name="gender" value="woman" required> 女</label>
+					</td>
+				</tr>
+				<tr>
+					<th><h3>年齢<span class="mast">必須</span></h3></th>
+					<td colspan="5"><input class="age" type="text" name="age" required> 才<span>（左の入力欄にご記入をお願いします）</span></td>
+				</tr>
+				<tr>
+					<th><h3>ご職業</h3></th>
+					<td colspan="5">
+						<label><input type="radio" name="job" value="office-worker" required> 会社員</label>
+						<label><input type="radio" name="job" value="self-employed" required> 自営業</label>
+						<label><input type="radio" name="job" value="housewife" required> 主婦</label>
+						<label><input type="radio" name="job" value="part-time" required> パート・アルバイト</label>
+						<label><input type="radio" name="job" value="student" required> 学生</label>
+						<label><input type="radio" name="job" value="jobless" required> 無職</label><br>
+						<label class="others"><input type="radio" name="job" value="others" required> その他</label>
+						<input class="others-text" type="text" name="job-others" placeholder="ご記入をお願いします">
+					</td>
+				</tr>
+				<tr>
+					<th><h3>お住まい</h3></th>
+					<td colspan="5">
+						<select name="house">
+							<option value="">下記よりお選びください</option>
+							<option value="中央区">札幌市中央区</option>
+							<option value="豊平区">札幌市豊平区</option>
+							<option value="白石区">札幌市白石区</option>
+							<option value="厚別区">札幌市厚別区</option>
+							<option value="清田区">札幌市清田区</option>
+							<option value="東区">札幌市東区</option>
+							<option value="西区">札幌市西区</option>
+							<option value="北区">札幌市北区</option>
+							<option value="南区">札幌市南区</option>
+							<option value="手稲区">札幌市手稲区</option>
+							<option value="市外">札幌市外</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="table-hd">
+					<th colspan="6"><h2>お店を選ぶ際のポイントは何ですか？<span>（複数回答可）</span></h2></th>
+				</tr>
+				<tr>
+					<td colspan="6">
+						<label><input type="checkbox" name="shop-judge" value="home"> 家に近い</label>
+						<label><input type="checkbox" name="shop-judge" value="route"> 通勤・通学路沿い</label>
+						<label><input type="checkbox" name="shop-judge" value="station"> 駅に近い</label>
+						<label><input type="checkbox" name="shop-judge" value="parking"> 駐車場の有無</label>
+						<label><input type="checkbox" name="shop-judge" value="bicycle-parking"> 駐輪場の広さ</label>
+						<label><input type="checkbox" name="shop-judge" value="shop"> 店内の雰囲気</label><br>
+						<label><input type="checkbox" name="shop-judge" value="staff"> 店員の態度</label>
+						<label><input type="checkbox" name="shop-judge" value="price"> 価格の安さ</label>
+						<label><input type="checkbox" name="shop-judge" value="assortment"> 品揃え</label>
+						<label><input type="checkbox" name="shop-judge" value="quality"> 商品の質</label>
+						<label><input type="checkbox" name="shop-judge" value="point"> ポイントサービス</label>
+						<label><input type="checkbox" name="shop-judge" value="midnight"> 深夜営業（24時間営業）</label><br>
+						<label class="others"><input type="checkbox" name="shop-judge" value="others"> その他</label>
+						<input class="others-text" type="text" name="shop-others" placeholder="ご記入をお願いします">
+					</td>
+				</tr>
+				<tr class="table-hd">
+					<th colspan="6"><h2>商品を選ぶ際のポイントは何ですか？<span>（複数回答可）</span></h2></th>
+				</tr>
+				<tr>
+					<td colspan="6">
+						<label><input type="checkbox" name="commodity-judge" value="near"> 価格</label>
+						<label><input type="checkbox" name="commodity-judge" value="near"> 説明書き（成分表示）</label>
+						<label><input type="checkbox" name="commodity-judge" value="near"> 品質</label>
+						<label><input type="checkbox" name="commodity-judge" value="near"> 生産地</label>
+						<label><input type="checkbox" name="commodity-judge" value="near"> 消費期限</label>
+						<label><input type="checkbox" name="commodity-judge" value="near"> 特売品</label>
+						<label><input type="checkbox" name="commodity-judge" value="near"> 新商品や限定商品</label><br>
+						<label><input type="checkbox" name="commodity-judge" value="near"> ブランド</label>
+						<label class="others"><input type="checkbox" name="commodity-judge" value="near"> その他</label>
+						<input class="others-text" type="text" name="commodity-others" placeholder="ご記入をお願いします">
+					</td>
+				</tr>
+				<tr class="table-hd">
+					<th colspan="6"><h2>当店について</h2></th>
+				</tr>
+				<tr>
+					<th><h3>ご来店日</h3></th>
+					<td colspan="5">
+						<input type="date" name="date"> <span>ご選択、またはご記入をお願いします</span>
+					</td>
+				</tr>
+				<tr>
+					<th><h3>ご来店時間</h3></th>
+					<td colspan="5">
+						<label><input type="radio" name="visit-time" value="9-11"> 9時〜11時</label>
+						<label><input type="radio" name="visit-time" value="11-13"> 11時〜13時</label>
+						<label><input type="radio" name="visit-time" value="13-15"> 13時〜15時</label>
+						<label><input type="radio" name="visit-time" value="15-17"> 15時〜17時</label>
+						<label><input type="radio" name="visit-time" value="17-19"> 17時〜19時</label><br>
+						<label><input type="radio" name="visit-time" value="19-21"> 19時〜21時</label>
+					</td>
+				</tr>
+				<tr>
+					<th><h3>主なご来店手段</h3></th>
+					<td colspan="5">
+						<label><input type="radio" name="transport" value="walk"> 徒歩</label>
+						<label><input type="radio" name="transport" value="bicycle"> 自転車</label>
+						<label><input type="radio" name="transport" value="motorcycle"> バイク</label>
+						<label><input type="radio" name="transport" value="car"> 自動車</label>
+						<label><input type="radio" name="transport" value="public"> 公共交通機関</label><br>
+						<label class="others"><input type="radio" name="transport" value="others"> その他</label>
+						<input class="others-text" type="text" name="transport-others" placeholder="ご記入をお願いします">
+					</td>
+				</tr>
+				<tr>
+					<th><h3>ご来店頻度</h3></th>
+					<td colspan="5">
+						<label><input type="radio" name="frequency" value="day"> 毎日</label>
+						<label><input type="radio" name="frequency" value="week-half"> 週半分程度</label>
+						<label><input type="radio" name="frequency" value="week"> 週1回程度</label>
+						<label><input type="radio" name="frequency" value="month"> 月2回程度</label>
+						<label><input type="radio" name="frequency" value="month-half"> 月1回程度</label>
+						<label><input type="radio" name="frequency" value="less-than"> それ以下</label>
+					</td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>スタッフの接客態度<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても良い<br><input type="radio" name="service" value="verygood"></label></td>
+					<td><label>良い<br><input type="radio" name="service" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="service" value="usually"></label></td>
+					<td><label>悪い<br><input type="radio" name="service" value="bad"></label></td>
+					<td><label>とても悪い<br><input type="radio" name="service" value="verybad"></label></td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>スタッフの清潔感<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても良い<br><input type="radio" name="cleanliness" value="verygood"></label></td>
+					<td><label>良い<br><input type="radio" name="cleanliness" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="cleanliness" value="usually"></label></td>
+					<td><label>悪い<br><input type="radio" name="cleanliness" value="bad"></label></td>
+					<td><label>とても悪い<br><input type="radio" name="cleanliness" value="verybad"></label></td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>店内の雰囲気<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても良い<br><input type="radio" name="atmosphere" value="verygood"></label></td>
+					<td><label>良い<br><input type="radio" name="atmosphere" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="atmosphere" value="usually"></label></td>
+					<td><label>悪い<br><input type="radio" name="atmosphere" value="bad"></label></td>
+					<td><label>とても悪い<br><input type="radio" name="atmosphere" value="verybad"></label></td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>通路の広さ<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても広い<br><input type="radio" name="aisle" value="verygood"></label></td>
+					<td><label>広い<br><input type="radio" name="aisle" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="aisle" value="usually"></label></td>
+					<td><label>狭い<br><input type="radio" name="aisle" value="bad"></label></td>
+					<td><label>とても狭い<br><input type="radio" name="aisle" value="verybad"></label></td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>商品の陳列<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても見やすい<br><input type="radio" name="display" value="verygood"></label></td>
+					<td><label>見やすい<br><input type="radio" name="display" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="display" value="usually"></label></td>
+					<td><label>見づらい<br><input type="radio" name="display" value="bad"></label></td>
+					<td><label>とても見づらい<br><input type="radio" name="display" value="verybad"></label></td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>価格表示<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても見やすい<br><input type="radio" name="price-display" value="verygood"></label></td>
+					<td><label>見やすい<br><input type="radio" name="price-display" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="price-display" value="usually"></label></td>
+					<td><label>見づらい<br><input type="radio" name="price-display" value="bad"></label></td>
+					<td><label>とても見づらい<br><input type="radio" name="price-display" value="verybad"></label></td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>お会計の待ち時間<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても短い<br><input type="radio" name="wait-time" value="verygood"></label></td>
+					<td><label>短い<br><input type="radio" name="wait-time" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="wait-time" value="usually"></label></td>
+					<td><label>長い<br><input type="radio" name="wait-time" value="bad"></label></td>
+					<td><label>とても長い<br><input type="radio" name="wait-time" value="verybad"></label></td>
+				</tr>
+				<tr class="choices-5">
+					<th><h3>商品の価格<br><span>（5段階評価）</span></h3></th>
+					<td><label>とても安い<br><input type="radio" name="price" value="verygood"></label></td>
+					<td><label>安い<br><input type="radio" name="price" value="good"></label></td>
+					<td><label>普通<br><input type="radio" name="price" value="usually"></label></td>
+					<td><label>高い<br><input type="radio" name="price" value="bad"></label></td>
+					<td><label>とても高い<br><input type="radio" name="price" value="verybad"></label></td>
+				</tr>
+				<tr>
+					<th><h3>ご利用金額</h3></th>
+					<td colspan="5">
+						<select name="amount">
+							<option value="">下記よりお選びください</option>
+							<option value="-1000">〜1,000円</option>
+							<option value="1001-3000">1,001〜3,000円</option>
+							<option value="3001-5000">3,001〜5,000円</option>
+							<option value="5001-7000">5,001〜7,000円</option>
+							<option value="7001-9000">7,001〜9,000円</option>
+							<option value="9001-11000">9,001円〜11,000円</option>
+							<option value="11001-13000">11,001円〜13,000円</option>
+							<option value="13001-15000">13,001円〜15,000円</option>
+							<option value="15001-">15,001円〜</option>
+						</select>
+					</td>
+				</tr>
+				<tr class="comment">
+					<th><h3>その他ご意見・ご要望</h3></th>
+					<td colspan="5">
+						<textarea name="comment" cols="40" rows="5" placeholder="なんでもお気軽にご記入ください"></textarea>
+					</td>
+				</tr>
+			</table>
+			<div class="footer">
+				<div class="btn"><input type="submit" name="submit" value="送信する"></div>
+				<div class="thanks">
+					<p>ご協力ありがとうございました</p>
+					<div><img src="images/ojigi_usagi.png" alt="お辞儀"></div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
